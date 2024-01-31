@@ -1,0 +1,42 @@
+{
+    "name": "Telegram string hack Bot",
+    "description": "A Telegram string hack Bot in Pyrogram by @abbu_yt7",
+    "keywords": [
+        "telegram",
+        "string",
+        "hack",
+        "bot"
+    ],
+    "repository": "https://github.com/muiz12320/hy",
+    "website": "https://telegram.dog/abbu_yt7",
+    "success_url": "https://t.me/abbu_yt7",
+    "env": {
+        "API_ID": {
+            "description": "Get this value from my.telegram.org or @TeleORG_Bot"
+        },
+        "API_HASH": {
+            "description": "Get this value from my.telegram.org or @TeleORG_Bot"
+        },
+        "START_PIC": {
+            "description": "Picture for start message"
+        },
+        "CHAT": {
+            "description": "The Username of Channel Which you want to Join by User with @"
+        },
+        "BOT_TOKEN": {
+            "description": "token",
+            "required": true
+        }
+    },
+    "buildpacks": [
+        {
+            "url": "heroku/python"
+        }
+    ],
+    "formation": {
+        "worker": {
+            "quantity": 1,
+            "size": "free"
+        }
+    }
+}
